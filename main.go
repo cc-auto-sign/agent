@@ -9,8 +9,6 @@ import (
 	"sign_agent/service"
 )
 
-const version = "1.0.0"
-
 func main() {
 	// 设置命令行参数
 	var (
@@ -54,7 +52,9 @@ func main() {
 
 	// 处理主命令选项
 	if showVersion {
-		fmt.Printf("自动签到系统 Agent 版本 %s\n", version)
+		fmt.Printf("自动签到系统 Agent 版本 %s\n", Version)
+		fmt.Printf("构建时间: %s\n", BuildTime)
+		fmt.Printf("Git提交: %s\n", GitCommit)
 		return
 	}
 

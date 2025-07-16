@@ -1,4 +1,5 @@
 # 这是一个GoReleaser配置文件，用于自动构建和发布Go应用
+version: 2
 
 before:
   hooks:

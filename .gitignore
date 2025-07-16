@@ -1,0 +1,39 @@
+# 编译后的二进制文件
+/checkin-agent
+/checkin-agent.exe
+
+# 配置文件
+/agent_config.json
+
+# Go特定忽略
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+/vendor/
+
+# IDE相关文件
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 操作系统特定文件
+.DS_Store
+Thumbs.db
+
+# 日志文件
+*.log
+
+# 服务安装相关文件
+/service/install.log
+
+# 临时文件
+/tmp/
+*.tmp
+
+# 缓存文件
+.cache/

@@ -42,8 +42,7 @@ archives:
 checksum:
   name_template: 'checksums.txt'
 
-snapshots:
-  name_template: "{{ .Tag }}-next"
+# 移除 snapshots 配置，在 v2 中可能不再支持
 
 changelog:
   sort: asc
@@ -55,11 +54,11 @@ changelog:
       - Merge pull request
       - Merge branch
 
-# 自动发布到GitHub Releases
+# 修复 GitHub 发布配置
 release:
+  # 简化 GitHub 配置
   github:
-    owner: {{.Env.GITHUB_REPOSITORY_OWNER}}
-    name: {{.ProjectName}}
+    owner: "{{.Env.GITHUB_REPOSITORY_OWNER}}"
   prerelease: auto
   draft: false
   name_template: "签到系统Agent {{.Tag}}"
